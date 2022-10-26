@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Posting!</title>
+</head>
+
+<body>
+    <h1>Each Detail Posting Page</h1>
+    <p>{{post.posttitle}}</p>
+    <p>{{post.contents}}</p>
+    <!-- showing images -->
+    {% if post.mainphoto %}
+    <img src="{{post.mainphoto.url}}" alt="" height="600">
+    <br>
+    {% endif %}
+    <a href="/blog/">List</a>
+</body>
+
+</html>
